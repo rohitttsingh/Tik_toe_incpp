@@ -72,12 +72,6 @@ int main()
     return 0;
 }
 
-/*********************************************
-    FUNCTION TO RETURN GAME STATUS
-    1 FOR GAME IS OVER WITH RESULT
-    -1 FOR GAME IS IN PROGRESS
-    O GAME IS OVER AND NO RESULT
-**********************************************/
 
 int checkwin()
 {
@@ -115,9 +109,6 @@ int checkwin()
 }
 
 
-/*******************************************************************
-     FUNCTION TO DRAW BOARD OF TIC TAC TOE WITH PLAYERS MARK
-********************************************************************/
 
 
 void board()
@@ -144,6 +135,3 @@ void board()
     cout << "     |     |     " << endl << endl;
 }
 
-/*******************************************************************
-                END OF PROJECT
-********************************************************************/
