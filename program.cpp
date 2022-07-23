@@ -8,18 +8,19 @@ void board();
 
 int main()
 {
-    int player = 1,i,choice;
+    int player = 1, i, choice;
 
     char mark;
+    
     do
     {
         board();
-        player=(player%2)?1:2;
+        player = ( player % 2) ? 1 : 2;
 
         cout << "Player " << player << ", enter a number:  ";
         cin >> choice;
 
-        mark=(player == 1) ? 'X' : 'O';
+        mark = (player == 1) ? 'X' : 'O';
 
         if (choice == 1 && square[1] == '1')
 
@@ -53,13 +54,13 @@ int main()
             cout<<"Invalid move ";
 
             player--;
-            cin.ignore();
-            cin.get();
+            
         }
+        
         i=checkwin();
 
         player++;
-    }while(i==-1);
+    } while(i == -1);
     board();
     if(i==1)
 
